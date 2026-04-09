@@ -1,8 +1,8 @@
-# ِ Bank Management System
+# Bank Management System
 
 A comprehensive C++ console-based banking application with user authentication, client management, and transaction processing capabilities.
 
-## ِ Table of Contents
+## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
 - [System Requirements](#system-requirements)
@@ -15,38 +15,38 @@ A comprehensive C++ console-based banking application with user authentication, 
 - [Contributing](#contributing)
 - [License](#license)
 
-## ِ Overview
+## Overview
 
 This Bank Management System is a secure, console-based application designed to manage banking operations including client accounts, transactions, and user access control. The system implements a role-based permission system to ensure secure access to different functionalities.
 
 ## Features
 
-### ِ Authentication System
+### Authentication System
 - Secure login with username and password
 - Role-based access control
 - Admin and user roles with customizable permissions
 
-### ِ Client Management
+### Client Management
 - **View Clients List**: Display all registered clients with their details
 - **Add New Client**: Register new clients with account number, PIN, name, phone, and balance
 - **Delete Client**: Remove clients from the system with confirmation
 - **Update Client**: Modify existing client information
 - **Find Client**: Search for specific clients by account number
 
-### ِ Transaction Operations
+### Transaction Operations
 - **Deposit**: Add funds to client accounts
 - **Withdraw**: Remove funds with balance verification
 - **Total Balance**: View cumulative balance of all accounts
 - Real-time balance updates
 
-### ِ User Management
+### User Management
 - **List Users**: Display all system users
 - **Add New User**: Create new users with custom permissions
 - **Delete User**: Remove users (Admin protected)
 - **Update User**: Modify user credentials and permissions
 - **Find User**: Search for specific users
 
-### ِ Permission System
+### Permission System
 The system implements 7 different permission levels:
 1. **Show Client List** (1)
 2. **Add Client** (2)
@@ -59,7 +59,7 @@ The system implements 7 different permission levels:
 
 Permissions are stored as bit flags, allowing flexible combinations.
 
-## ِ؛ System Requirements
+## System Requirements
 
 - **Compiler**: C++11 or higher
 - **Operating System**: Windows (uses `system("cls")` and `system("pause")`)
@@ -67,7 +67,7 @@ Permissions are stored as bit flags, allowing flexible combinations.
   - Standard C++ Library
   - `MyLib.h` (custom library - ensure it's in the same directory)
 
-## ِ Installation
+## Installation
 
 1. **Clone the repository**
    ```bash
@@ -91,7 +91,7 @@ Permissions are stored as bit flags, allowing flexible combinations.
    ./BankSystem
    ```
 
-## ِ Usage
+## Usage
 
 ### First Login
 Default admin credentials:
@@ -145,6 +145,8 @@ After successful login, you'll see the main menu with 8 options:
    - Find specific user
 
 
+## Project Structure
+
 ### Code Organization
 
 The project is organized into several functional sections:
@@ -157,7 +159,7 @@ The project is organized into several functional sections:
 - **User Management**: User CRUD with permission handling
 - **Authentication**: Login system with credential verification
 
-## ِ User Permissions
+## User Permissions
 
 Permissions are implemented using bitwise operations:
 
@@ -177,7 +179,7 @@ Permissions are implemented using bitwise operations:
 - All Operations: `1 + 2 + 4 + 8 + 16 + 32 + 64 = 127`
 - Full Access: `-1`
 
-## ِ File Format
+## File Format
 
 ### Client.txt Format
 ```
@@ -200,7 +202,7 @@ Admin #//# 1234 #//# -1
 User1 #//# 1234 #//# 48
 ```
 
-## ِ Security Features
+## Security Features
 
 - **Authentication Required**: All operations require valid login
 - **Permission-Based Access**: Users can only perform authorized operations
@@ -208,7 +210,7 @@ User1 #//# 1234 #//# 48
 - **Balance Verification**: Withdrawals are validated against available balance
 - **Unique Identifiers**: Account numbers and usernames must be unique
 
-## ِ Known Limitations
+## Known Limitations
 
 - Windows-specific commands (`system("cls")`, `system("pause")`)
 - Text-based file storage (not encrypted)
@@ -216,7 +218,7 @@ User1 #//# 1234 #//# 48
 - Single-session use (no concurrent users)
 
 
-## ِ License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
